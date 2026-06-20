@@ -165,7 +165,6 @@ mode "resize" {
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
 }
-
 gaps inner 1
 gaps outer -1 
 new_window pixel 1
@@ -173,7 +172,7 @@ hide_edge_borders both
 default_floating_border pixel 1
 
 set $bg-color               #2F334D
-set $inactive-bg-color      #292E42
+set $inactive-bg-color      #000000
 set $urgent-bg-color        #292E42
 set $text-color             #C0CAF5
 set $inactive-text-color    #B89AF7AA
@@ -198,10 +197,15 @@ bar {
 
 colors {
         background #292B2Eff
-        statusline #BB9AF799
+        statusline #aaaaaaaa
         separator  #00000000
+
+	set $baise #fffffff
+	set $huise #5555555
+
+
         # 工作区颜色         边框    背景    文字
-        focused_workspace  #bb9af799 #292e42aa #bb9af799 
+        focused_workspace  $huise #292e42aa $baise 
         inactive_workspace #2f334dff #292B2Eff #c0caf588
         active_workspace   #00000000 #000000AA #00000000
         urgent_workspace   #00000000 #000000AA #00000000
