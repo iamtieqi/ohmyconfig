@@ -7,6 +7,8 @@ sudo fc-cache -fv
 
 sudo apt install i3 rofi compton feh mate-terminal
 
+cp ./i3* ~/.config
+
 cp ./Pictures ~/
 
 cp spacemacs ~/.spacemacs
